@@ -1,0 +1,82 @@
+
+git push
+
+
+
+sunbeam@sunbeam:~/github$ git remote origin https://github.com/manishabk/github.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+sunbeam@sunbeam:~/github$ git remote -v origin https://github.com/manishabk/github.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+sunbeam@sunbeam:~/github$ git remote add origin https://github.com/manishabk/github.git
+sunbeam@sunbeam:~/github$ git remote -v
+origin	https://github.com/manishabk/github.git (fetch)
+origin	https://github.com/manishabk/github.git (push)
+sunbeam@sunbeam:~/github$ ls
+file1.js
+sunbeam@sunbeam:~/github$ git push -u origin master
+Username for 'https://github.com': manishabk
+Password for 'https://manishabk@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 473 bytes | 236.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/manishabk/github.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+sunbeam@sunbeam:~/github$ 
+
+
+
+=========================================================================================
+
+
+pull
+
+
+
+
+sunbeam@sunbeam:~/Desktop/githubclone$ git clone https://github.com/manishabk/github.git
+Cloning into 'github'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+sunbeam@sunbeam:~/Desktop/githubclone$ ls
+github
+sunbeam@sunbeam:~/Desktop/githubclone$ 
+
+
